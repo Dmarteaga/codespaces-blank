@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Pre-Order | North Star Bakery</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img
+                src="media/bakery-logo_c.png"
+                width="300"
+                alt="North Star Bakery logo with a loaf of bread and wheat design"
+            >
+        </a>
+
+        <h1>Contact and Pre-Order</h1>
+
+        <p>
+            Contact North Star Bakery with a question or submit a request
+            for an advance pickup order.
+        </p>
+
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="about.html">About the Bakery</a>
+                </li>
+                <li>
+                    <a href="contact.html" aria-current="page">
+                        Contact and Pre-Order
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading">Inquiry and Pre-Order Request Form</h2>
+
+            <p>
+                Complete the form below. Required fields are marked with
+                an asterisk (*).
+            </p>
+
+            <form action="contact.html" method="get">
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <p>
+                        <label for="full-name">Full name: *</label>
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="full-name"
+                            minlength="2"
+                            maxlength="60"
+                            autocomplete="name"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">Email address: *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                        >
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Request Type</legend>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="pre-order"
+                            name="request-type"
+                            value="pre-order"
+                            required
+                        >
+                        <label for="pre-order">Pre-order request</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="general-question"
+                            name="request-type"
+                            value="general-question"
+                        >
+                        <label for="general-question">
+                            General question
+                        </label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pickup and Item Details</legend>
+
+                    <p>
+                        <label for="pickup-date">
+                            Preferred pickup date: *
+                        </label>
+                        <input
+                            type="date"
+                            id="pickup-date"
+                            name="pickup-date"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="item-details">
+                            Item details: *
+                        </label>
+                        <br>
+                        <textarea
+                            id="item-details"
+                            name="item-details"
+                            rows="6"
+                            cols="50"
+                            minlength="5"
+                            maxlength="500"
+                            required
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        <label for="allergy-notes">
+                            Allergy notes, if applicable:
+                        </label>
+                        <br>
+                        <textarea
+                            id="allergy-notes"
+                            name="allergy-notes"
+                            rows="4"
+                            cols="50"
+                            maxlength="300"
+                        ></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Request</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+
+        <section aria-labelledby="location-heading">
+            <h2 id="location-heading">Location</h2>
+
+            <address>
+                North Star Bakery<br>
+                125 Market Street<br>
+                North Star, Minnesota
+            </address>
+        </section>
+
+        <section aria-labelledby="hours-heading">
+            <h2 id="hours-heading">Hours of Operation</h2>
+
+            <ul>
+                <li>Monday-Friday: 6:30 a.m.-6:00 p.m.</li>
+                <li>Saturday: 7:00 a.m.-4:00 p.m.</li>
+                <li>Sunday: 7:00 a.m.-2:00 p.m.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="response-heading">
+            <h2 id="response-heading">Response Information</h2>
+
+            <p>
+                A team member will review each request and respond by email.
+                A submitted form does not guarantee product availability
+                until the bakery confirms the order.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 North Star Bakery. Handmade with care for our
+            community.
+        </p>
+    </footer>
+</body>
+</html>
