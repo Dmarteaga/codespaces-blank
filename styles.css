@@ -1,0 +1,258 @@
+/* North Star Bakery - Visual Design System */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff8f0;
+    color: #2f2a26;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+header {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #d88c5a;
+}
+
+header img {
+    width: 160px;
+    max-width: 45vw;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    color: #6b3e26;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 0.75rem 0;
+    font-size: 2rem;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+nav {
+    margin-top: 1rem;
+    background-color: #6b3e26;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: #fff8f0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #d88c5a;
+    color: #2f2a26;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: min(100% - 2rem, 1100px);
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+section {
+    padding: 1.25rem;
+    border: 2px solid #d88c5a;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(47, 42, 38, 0.14);
+}
+
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+picture {
+    display: block;
+}
+
+figure {
+    max-width: 750px;
+    margin: 1.5rem auto;
+}
+
+figcaption {
+    padding: 0.75rem;
+    background-color: #6b3e26;
+    color: #fff8f0;
+    text-align: center;
+}
+
+a {
+    color: #6b3e26;
+}
+
+a:hover,
+a:focus {
+    color: #2f2a26;
+}
+
+audio,
+video {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin: 1rem 0;
+}
+
+form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    border: 2px solid #d88c5a;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 0.5rem;
+    color: #6b3e26;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 0.75rem;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.7rem;
+    border: 2px solid #6b3e26;
+    border-radius: 5px;
+    background-color: #fff8f0;
+    color: #2f2a26;
+    font: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #d88c5a;
+    outline-offset: 2px;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    width: auto;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.75rem 1.25rem;
+    border: 2px solid #6b3e26;
+    border-radius: 6px;
+    background-color: #6b3e26;
+    color: #fff8f0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus {
+    background-color: #d88c5a;
+    color: #2f2a26;
+}
+
+address {
+    font-style: normal;
+}
+
+footer {
+    padding: 1.25rem;
+    background-color: #6b3e26;
+    color: #fff8f0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Layout for tablets and larger screens */
+@media (min-width: 768px) {
+    header {
+        padding: 2rem;
+    }
+
+    header img {
+        width: 190px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    main {
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    section {
+        padding: 1.75rem;
+    }
+}
