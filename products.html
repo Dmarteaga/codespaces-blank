@@ -148,6 +148,45 @@
                 to request an item for pickup.
             </p>
         </section>
+        <section id="favorites-feature">
+    <h2>Bakery Favorites</h2>
+
+    <p>
+        Filter our bakery products and save your favorites
+        for your next visit.
+    </p>
+
+    <label for="category-filter">
+        Filter products by category:
+    </label>
+
+    <select id="category-filter">
+        <option value="all">All Products</option>
+        <option value="bread">Breads</option>
+        <option value="pastry">Pastries</option>
+        <option value="cake">Cakes</option>
+    </select>
+
+    <div
+        id="product-list"
+        class="product-list"
+    ></div>
+
+    <div class="favorites-summary">
+        <h3>
+            Your Favorites
+            (<span id="favorite-count">0</span>)
+        </h3>
+
+        <ul id="favorites-list"></ul>
+
+        <p
+            id="storage-message"
+            class="status-message"
+            aria-live="polite"
+        ></p>
+    </div>
+</section>
     </main>
 
     <footer>
@@ -156,5 +195,6 @@
             community.
         </p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
